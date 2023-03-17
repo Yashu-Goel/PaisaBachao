@@ -1,0 +1,44 @@
+.TitleBarContainer
+{
+    position: absolute;
+    top: 0px;
+    z-index: 5;
+    font-size: 2.5rem;
+}
+.MenuBarBox
+{
+    background-color: #0a1c30;
+    color: white;
+    max-width: 200rem;
+    height: auto;
+    z-index: 20;
+    padding-right: 4rem;
+}
+.Back
+{
+    padding: 1.7rem 0 2rem 3rem;
+    font-size: 2.8rem;
+    transition: transform 250ms linear;
+}
+.Back:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.Title{
+    padding: 1rem 0px 1rem 2rem;
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+.Items
+{
+    padding: 10px 0px 30px 20px;
+    font-weight: 400;
+}
+.Item
+{
+    margin: .5rem 0px;
+}
+.Item:hover
+{
+    text-decoration: underline;
+}

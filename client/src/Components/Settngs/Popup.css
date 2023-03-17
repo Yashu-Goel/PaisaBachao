@@ -1,0 +1,120 @@
+.background
+{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(128, 128, 128, 0.581);
+}
+.outer-outer-pop
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.edit-pop {
+    width: 45rem;
+    max-width: 60rem;
+    box-sizing: border-box;
+    margin: 16rem auto;
+    background-color: #bcbcf4;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    border: 1px solid black;
+    font-size: 1.5rem;
+}
+.edit-pop .close-button1 {
+    padding: 1.5px 4px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    float: right;
+    background-color: red;
+    color: #fff;
+}
+.edit-pop .close-button1:hover {
+    cursor: pointer;
+    background-color:  	#DC143C;
+}
+
+.edit-pop>h2{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 1rem;
+    padding-top: 0.4rem;
+}
+.edit-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    font-size: 1.55rem;
+}
+
+.edit-form>div>label {
+    padding: .5rem;
+    margin: 1rem;
+
+}
+
+.edit-form>div>input {
+    width: 80%;
+    height: 1.5rem;
+    border-radius: .5rem;
+    padding: .7rem;
+    margin: 1rem;
+}
+
+.edit-form>input[type='submit'] {
+    width: 14rem;
+    height: 2.5rem;
+    margin: 1rem;
+    color: white;
+    background-color: orange;
+    border-radius: .5rem;
+    font-size: 1.6rem;
+}
+
+.edit-form>input[type='submit']:hover {
+    cursor: pointer;
+    color: black;
+}
+
+.success-edit {
+    width: 100%;
+    color: black;
+    margin: 1rem;
+    font-weight: bold;
+}
+
+.success-fail {
+    width: 30%;
+    color: black;
+    margin: 1rem;
+    font-weight: bold;
+}
+
+#backbtn {
+    width: 20vw;
+    max-width: 15rem;
+    height: 2.2rem;
+    margin: 1rem;
+    color: white;
+    background-color: rgb(20, 216, 20);
+    border-radius: .5rem;
+    font-size: 1.6rem;
+}
+
+#backbtn:hover {
+    cursor: pointer;
+    color: black;
+    background-color: gray;
+    font: bold;
+}
+@media screen and (max-width: 850px)
+{
+    .edit-pop{
+        width: 95%;
+    }
+}

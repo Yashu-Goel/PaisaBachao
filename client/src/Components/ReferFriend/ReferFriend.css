@@ -1,0 +1,84 @@
+.ReferFriendMainContainer
+{
+  box-shadow: rgba(3, 102, 214, 0.3) rem rem rem 3px;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bold;
+  margin: 2rem;
+  padding: 3rem;
+  border-radius: 1rem;
+}
+.ReferFriendMainContainer div p
+{
+    border: 2px solid #D6ED17;
+    display: inline-block; 
+    margin: 2rem 0; 
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+.FormContainer Form
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.InputContainer
+{
+  height: 3rem;
+  width: 23rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.495);
+  padding: 0.6rem;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+.SubmitButton {
+  appearance: none;
+  background-color: #000000;
+  border-radius: 1.5rem;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0.5rem 0;
+  max-height: 4rem;
+  padding: 1rem;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 14rem;
+  will-change: transform;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3.4rem;
+}
+
+.SubmitButton:disabled {
+  pointer-events: none;
+}
+
+.SubmitButton:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 0.8rem 1.5rem;
+  transform: translateY(-2px);
+  border: 1px solid white;
+}
+
+.SubmitButton:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+.MessageContainer
+{
+  color: red;
+  display: inline;
+  margin: 1rem 0;
+}

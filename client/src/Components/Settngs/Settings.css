@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.setContainer
+{
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.NavBarContainer .Logo
+{
+    height: 39px;
+    position: absolute;
+    left: 0;
+    margin-left: 1rem;
+}
+
+#setting1
+{
+    font-size: 2.1rem;
+
+}
+
+.rightContainer
+{
+    display: flex;
+    margin-top: 9rem;
+    padding: 4rem 6rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+    flex-direction: column;
+    height: 18rem;
+    border-radius: 1rem;
+    position: relative; 
+    align-items: center;
+    justify-content: center;
+
+}
+.rightContainerTitle
+{
+    display: flex;
+    justify-content: center;
+}
+.rightContTitLink
+{
+    padding: 0 1rem;
+    text-decoration: none;
+    color: #002147;
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+.rightContTitLink:hover
+{
+    transform: scale(1.04);
+    color: #fff;
+}
+.setInput input
+{
+    border: none;
+
+}
+.setInput input:focus
+{
+    outline: none;
+}
+
+.rightContainerDetails form{
+    margin-top: 20px;
+    padding: 20px 40px;
+    position: relative;
+}
+.innerform
+{
+    position: absolute;
+    top: .5rem;
+    left: 1rem;
+    width: 36rem;
+}
+.setInput
+{
+    color: #002147;
+    display: flex;
+    position: relative;
+    margin-top: 1rem;
+    font-size: 1.8rem;
+}
+.setInput input
+{
+    background-color: #11111100;
+    font-size: 1.8rem;
+    border-bottom: 2px solid #11111153;
+    margin-left: 1rem;
+    color: #002147;
+}
+.setInput a
+{
+    position: absolute;
+    right: 1rem;
+    text-decoration: none;
+}
+.formCB
+{
+    font-size: 1.6rem;
+    margin-top: 6rem;
+}
+.formCB input
+{
+    margin-right: 1rem;
+    cursor: pointer;
+}
+.ReloadChanges
+{
+    text-align: center;
+    margin-top: 2rem;
+}
+.ReloadChanges input
+{
+    background-color: #11111100;
+    color: #002147;
+    font-size: 1.6rem;
+    outline: none;
+    border: 1px solid #002147;
+    padding: 2px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.ReloadChanges input:hover
+{
+    transform: scale(1.03);
+}
+.BlurBackground
+{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #575757;
+}
