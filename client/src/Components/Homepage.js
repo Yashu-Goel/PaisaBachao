@@ -5,6 +5,7 @@ import TopCashbackStores from './TopCashbackStores/TopCashbackStores';
 import Header from '../Header/Header/Header';
 import ReferFriend from './ReferFriend/ReferFriend';
 import Footer from './Footer/Footer';
+import BestInFinance from './BestInFinance/BestInFinance';
 
 const Homepage = () => {
     return (
@@ -13,8 +14,9 @@ const Homepage = () => {
             <ImageCarousel />
             <TopCategories />
             <TopCashbackStores />
-            <ReferFriend/>
-            <Footer/>
+            <BestInFinance />
+            <ReferFriend />
+            <Footer />
         </div>
     )
 }

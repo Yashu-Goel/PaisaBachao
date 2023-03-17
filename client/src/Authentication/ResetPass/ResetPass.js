@@ -60,7 +60,6 @@ const ResetPass = ({closeModal}) => {
                 </form>
             </div>
         </div>
-
     )
 }
 

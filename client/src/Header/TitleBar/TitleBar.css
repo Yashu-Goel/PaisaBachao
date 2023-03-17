@@ -1,5 +1,4 @@
-.TitleContainer
-{
+.TitleContainer {
     display: flex;
     justify-content: space-between;
     background-color: #0a1c30;
@@ -8,20 +7,20 @@
     color: white;
     width: 100%;
 }
-.TitleContainer img
-{
-    height: 7rem;
-    position: absolute;
-    left: 10rem;
+
+.TitleContainer img {
+    height: 4rem;
+    margin-left: 10rem;
     z-index: 3;
 }
-.Registration{
+
+.Registration {
     display: flex;
     align-items: center;
     font-size: 1.6rem;
 }
-.Registration button
-{
+
+.Registration button {
     margin: 0 1rem;
     padding: 0.7rem 1rem;
     background-color: white;
@@ -29,59 +28,82 @@
     font-weight: bold;
     border-radius: .5rem;
 }
-.Registration button:hover
-{
+
+.Registration button:hover {
     background-color: #0a1c30;
     color: white;
     border: 2px solid white;
     cursor: pointer;
 }
-.SearchBar{
+
+.SearchBar {
     border-radius: 0.5rem;
     width: 32rem;
-    height:1.5rem;
+    height: 1.5rem;
     padding: 1rem;
     position: absolute;
     left: 40rem;
 }
-#earning{
+
+#earning {
     text-decoration: none;
     color: white;
     margin-right: 1rem;
-    /* position: absolute; */
-    /* right:330px; */
     vertical-align: middle;
 }
-#earning:hover
-{
+
+#earning:hover {
     text-decoration: underline;
     transform: scale(1.03);
 }
-#setting
-{
+
+#setting {
     color: white;
     background-color: #0a1c30;
-    border: none;    
+    border: none;
     font-size: 2.2rem;
     padding-top: 0.5rem;
     display: flex;
 
 }
-#setting:hover
-{
+
+#setting:hover {
     transition: all linear;
     animation: rotate 2s linear infinite;
 }
-@keyframes rotate
-{
-    0%
-    {
+
+@keyframes rotate {
+    0% {
         transform: rotate(0deg);
     }
-    100%
-    {
+
+    100% {
         transform: rotate(360deg);
     }
 }
 
- 
+@media (max-width: 1070px) {
+
+    .SearchBar,.none {
+        display: none;
+    }
+}
+
+@media (max-width: 1250px) {
+
+    .how-does-it-work {
+        display: none;
+    }
+}
+
+@media (max-width: 420px) {
+    #earning{
+        display: none;
+    }
+}
+@media (min-width: 100px) {
+
+    .none {
+        display: none;
+    }
+}

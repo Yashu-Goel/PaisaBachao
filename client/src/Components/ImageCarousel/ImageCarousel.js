@@ -1,30 +1,20 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./ImageCarousel.css";
 import OfferCard from "../OfferCard/OfferCard";
-const API_BASE = "https://calm-ruby-hare-cape.cyclic.app";
+import Data from "./offer_data_mock.json";
+
+
 const ImageCarousel = () => {
-
-  const [Data, setData] = useState([])
-
-  useEffect(() => {
-    fetch(API_BASE+"/OfferData", {
-      method: "GET"
-    }).then(response => response.json())
-      .then((OfferData) => {
-        setData(OfferData);
-      })
-
-  }, [])
-
 
   return (
     <div className="ProductCarousel">
+      <span>&#10021; DEAL OF THE DAY &#10021;</span>
       <button
         className="PrevBtn"
         onClick={() => {
           let Box = document.querySelector(".ProductContainer");
           let Width = Box.clientWidth;
-          Box.scrollLeft = Box.scrollLeft - Width -5;
+          Box.scrollLeft = Box.scrollLeft - Width - 5;
         }}
       >
         <p>&lt;</p>

@@ -2,19 +2,12 @@
     --back: #435f7e;
 }
 
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-} */
-
 .container2 {
     text-align: center;
     width: 33vw;
     height: 70vh;
-    margin: 7rem auto;
-    width: 28rem;
+    margin: 11.2rem auto;
+    width: 30rem;
     max-height: 43rem;
     border: 2px solid black;
     background-color: var(--back);

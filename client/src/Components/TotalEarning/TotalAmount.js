@@ -61,8 +61,11 @@ const TotalAmount = () => {
     return (
         <>
             <div id='teContainer'>
+            
                 <div className='Background'>
+
                     <div id='te1Container'>
+
                         <div id='teLink'>
                             <div className='Earning'>
                                 <p id='tep'>Total Earnings</p>
@@ -70,7 +73,9 @@ const TotalAmount = () => {
                             </div>
                             <div id='owall'><i class='fas fa-wallet' id='waIcon'></i></div>
                         </div>
+
                         <p id='temsg'>Earnings will show here within 72 hours of your shopping via FreeKaMaal.</p>
+
                         <div class='btns-earn'>
 
                             <div className='HomePageLink'>
@@ -82,6 +87,7 @@ const TotalAmount = () => {
                         </div>
 
                     </div>
+
                     <div id='order-container'>
                         {(data.array.length !== 0) && <h2 id='order-heading'>CLICK HISTORY</h2>}
                         {(data.array.length === 0) && <h2 id='order-heading'>No Click History</h2>}
@@ -95,6 +101,7 @@ const TotalAmount = () => {
                             ))}
                         </ul>
                     </div>
+
                 </div>
             </div>
             <ToastContainer position='top-center' />

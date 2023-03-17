@@ -15,13 +15,12 @@ const Footer = () => {
         </div>
         <div className="OuterContainer">
           <div>
-            <div className="FooterImageContainer">
+            {/* <div className="FooterImageContainer">
               <img src={AllenImg} />
-            </div>
+            </div> */}
             <div className="NameContainer">
               <p>Allen Benny</p>
             </div>
-
             <div className="SocialMedia">
               <Link to="https://www.linkedin.com/in/allen-benny038/" target="_blank">
                 <SiLinkedin />
@@ -33,9 +32,9 @@ const Footer = () => {
           </div>
 
           <div>
-            <div className="FooterImageContainer">
+            {/* <div className="FooterImageContainer">
               <img src={YashuImg} />
-            </div>
+            </div> */}
             <div className="NameContainer">
               <p>Yashu Goel</p>
             </div>

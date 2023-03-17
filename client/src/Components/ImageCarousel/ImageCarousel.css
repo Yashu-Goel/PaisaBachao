@@ -1,19 +1,26 @@
-.ProductCarousel
-{
+.ProductCarousel {
     position: relative;
     overflow: hidden;
     padding: 2rem;
 }
-.ProductContainer
-{
+
+.ProductCarousel span {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-left: 3rem;
+}
+
+.ProductContainer {
     padding: 0 1rem;
     display: flex;
     overflow-x: hidden;
     scroll-behavior: smooth;
     align-items: start;
+    margin-top: -2rem;
 }
-.ProductCarousel .PrevBtn, .ProductCarousel .NextBtn
-{
+
+.PrevBtn,
+.NextBtn {
     border: none;
     width: 6rem;
     position: absolute;
@@ -23,21 +30,23 @@
     background-color: rgba(0, 0, 0, 0);
     top: 14rem;
     border-radius: 1rem;
-    transition: transform .2s;
 }
-.ProductCarousel .NextBtn:hover,.ProductCarousel .PrevBtn:hover
-{
+
+.NextBtn:hover,
+.PrevBtn:hover {
     transform: scale(1.1);
 }
-.ProductCarousel .PrevBtn
-{
+
+.PrevBtn {
     left: 0;
 }
-.ProductCarousel .NextBtn
-{
+
+.NextBtn {
     right: 0;
 }
-.ProductCarousel .NextBtn p,.ProductCarousel .PrevBtn p{
+
+.NextBtn p,
+.PrevBtn p {
     font-size: 5rem;
     background-color: rgba(255, 255, 255, 0.429);
     box-shadow: rgba(0, 0, 0, 0.19) rem 1rem 2rem, rgba(0, 0, 0, 0.23) rem 6px 6px;

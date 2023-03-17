@@ -1,20 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./TopCategories.css";
 import CategoryCard from "../CategoryCard/CategoryCard";
-const API_BASE = "https://calm-ruby-hare-cape.cyclic.app";
+import Data from "./TopCategories.json"
 const TopCategories = () => {
-
-  const [Data, setData] = useState([])
-
-  useEffect(() => {
-    fetch(API_BASE+"/TopCategoriesData", {
-      method: "GET"
-    }).then(response => response.json())
-      .then((OfferData) => {
-        setData(OfferData);
-      })
-
-  }, [])
 
   return (
     <div className="TopCategoriesMainContainer">

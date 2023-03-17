@@ -5,6 +5,7 @@ import { AiFillSetting } from "react-icons/ai";
 import axios from "axios"
 import { Link, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
+import MenuBar from "../MenuBar/MenuBar";
 
 const API_BASE = "https://calm-ruby-hare-cape.cyclic.app"
 
@@ -48,20 +49,22 @@ const TitleBar = () => {
   return (
     <>
       <div className="TitleContainer">
-        <div>&#x0;</div>
-        <img src={Logo} alt="logo" />
+        <MenuBar />
+        <div className="none">&#x0;</div>
+        <img src={Logo} alt="logo" className="-logo" />
         <input className="SearchBar" placeholder="What do you want to buy today...?" />
         <div className="Registration">
           {credentials && <Link to="/myearning" id="earning">Total Earnings: &#8377;{amount}</Link>}
           {credentials === undefined && <Link to="/myearning" id="earning">Loading ...</Link>}
-          <Link to="/querycard"><button>How Does it work?</button></Link>
+          <Link to="/querycard" className="how-does-it-work"><button>How Does it work?</button></Link>
           {!credentials && <Link to='/login'><button>LogIn</button></Link>}
           {!credentials && <Link to='/signup'><button>Signup</button></Link>}
           {credentials && <button className='butt bot' onClick={Logout}>Logout</button>}
           {credentials && <Link to="/setting"> <button className='butt bot' id="setting" ><AiFillSetting /></button></Link>}
         </div>
-        </div>
-        <ToastContainer autoClose={2000} />
-      </>)};
+      </div>
+      <ToastContainer autoClose={2000} />
+    </>)
+};
 
-      export default TitleBar;
+export default TitleBar;

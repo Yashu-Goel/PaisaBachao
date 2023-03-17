@@ -1,21 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import './TopCashbackStores.css'
 import TopCashbackStoresCard from '../TopCashbackStoresCard/TopCashbackStoresCard'
-const API_BASE = "https://calm-ruby-hare-cape.cyclic.app";
+import Data from "./TopCashBack.json"
 
 const TopCashbackStores = () => {
-
-  const [Data, setData] = useState([]);
-
-  useEffect(() => {
-    fetch(API_BASE+"/TopCashbackStoresData", {
-      method: "GET"
-    }).then(response => response.json())
-      .then((OfferData) => {
-        setData(OfferData);
-      })
-
-  }, [])
 
   return (
     <div className='TopCashbackStoresMainConatiner'>
@@ -27,9 +15,8 @@ const TopCashbackStores = () => {
             let Box = document.querySelector(".TopCashbackStoresContainer");
             let Width = Box.clientWidth;
             let a = 0;
-            if(Width<400)
-            {
-              a=370-Width;
+            if (Width < 400) {
+              a = 370 - Width;
             }
             Box.scrollLeft = Box.scrollLeft - Width + a;
             console.log(Width);
@@ -46,9 +33,8 @@ const TopCashbackStores = () => {
             let Box = document.querySelector(".TopCashbackStoresContainer ");
             let Width = Box.clientWidth;
             let a = 0;
-            if(Width<400)
-            {
-              a=370-Width;
+            if (Width < 400) {
+              a = 370 - Width;
             }
             Box.scrollLeft = Box.scrollLeft + Width - a;
             Box = document.querySelector(".TopCashbackStoresContainer1");
