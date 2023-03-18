@@ -2,6 +2,7 @@ import "./Login.css";
 import React, { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
+import '../../Components/Toast.css'
 import ResetPass from "../ResetPass/ResetPass";
 
 const API_BASE = "https://calm-ruby-hare-cape.cyclic.app";
@@ -79,7 +80,7 @@ const Login = () => {
           </Link>
         </form>
       </div>
-      <ToastContainer position="top-center" autoClose={3000} />
+      <ToastContainer position="top-center" autoClose={3000} toastClassName='my-toast'/>
     </>
 
   );

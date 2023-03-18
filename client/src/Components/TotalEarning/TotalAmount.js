@@ -5,8 +5,10 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Link, useNavigate } from 'react-router-dom'
 import axios from 'axios';
-
+import '../Toast.css'
 const API_BASE = "https://calm-ruby-hare-cape.cyclic.app"
+
+
 
 const TotalAmount = () => {
     const navigate = useNavigate();
@@ -81,7 +83,7 @@ const TotalAmount = () => {
                                 {<Link to='#' className='btn-with' onClick={withHandler}><span>Withdraw</span></Link>}
                             </div>
                             <div className='HomePageLink'>
-                                <Link to='/' className='btn-home'><span>Go to home page</span></Link>
+                                <Link to='/' className='btn-home'><span>Home</span></Link>
                             </div>
                         </div>
 
@@ -102,7 +104,7 @@ const TotalAmount = () => {
                     </div>
 
                 </div>
-            {/* <ToastContainer position='top-center' /> */}
+            <ToastContainer position='top-center' toastClassName='my-toast'/>
             {show && <MyModel withHandler={withHandler} amount={data.amount} />}
         </>
     )

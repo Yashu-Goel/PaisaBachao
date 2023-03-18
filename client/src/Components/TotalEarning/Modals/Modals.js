@@ -1,10 +1,9 @@
 import React, { useState } from "react"
 import { useNavigate } from "react-router-dom";
-import { ToastContainer, toast } from 'react-toastify';
+import {  toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
 import './Modals.css'
-
+import '../../Toast.css'
 const API_BASE = "https://calm-ruby-hare-cape.cyclic.app"
 
 const MyModel = ({ withHandler, amount }) => {
@@ -63,12 +62,17 @@ const MyModel = ({ withHandler, amount }) => {
 
         e.preventDefault();
         if (upi !== cupi) {
-            toast.info("Upi id mismatch");
+            toast.info("Upi id mismatch",{
+                toastClassName: "my-toast"
+            });
             return;
         }
         if(amoun < 200)
         {
-            toast.error("Minimum amount not reached");
+            toast.error("Minimum amount not reached",{
+                toastClassName: "my-toast"
+            });
+
             return;
         }
 
@@ -84,7 +88,9 @@ const MyModel = ({ withHandler, amount }) => {
         })
             .then(handleErrors)
             .then(() => {
-                toast.success("Withdrawal success !!!");
+                toast.success("Withdrawal success !!!",{
+                    toastClassName: "my-toast"
+                });
                 setTimeout(() => {
                     navigate("/setting/payment-history");
                 }, 2000)

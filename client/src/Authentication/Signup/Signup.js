@@ -2,7 +2,7 @@ import './Signup.css'
 import React, { useState } from 'react'
 import { ToastContainer, toast } from 'react-toastify';
 import { useNavigate,Link } from "react-router-dom";
-
+import '../../Components/Toast.css'
 const API_BASE = "https://calm-ruby-hare-cape.cyclic.app";
 
 const Signup = () => {
@@ -63,7 +63,7 @@ const Signup = () => {
         <input className='input' type="submit" value='Signup'></input>
         <Link to="/login" className='reset1'>already a user?</Link>
       </form>
-      <ToastContainer position='top-center' autoClose={1500} />
+      <ToastContainer position='top-center' autoClose={1500} toastClassName='my-toast'/>
     </div>
   )
 }

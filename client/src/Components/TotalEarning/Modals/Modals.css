@@ -5,12 +5,13 @@
     right: 0;
     bottom: 0;
     background-color: rgba(189,189,189,1);
+    
   
 }
 .modal-wrapper{
     background-color: #bcbcf4;
     width: 40rem;
-    margin: 2rem auto;
+    margin: 9rem auto;
     border-radius: 1rem;
     padding: 1rem 0rem;
 }
