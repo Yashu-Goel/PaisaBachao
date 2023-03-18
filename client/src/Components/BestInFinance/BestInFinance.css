@@ -1,60 +1,76 @@
-.best-container {
+.FinanceCarousel
+{
     position: relative;
     overflow: hidden;
     padding: 2rem;
 }
-
-.best-container span {
+.best-container span
+{
     font-size: 2.5rem;
     font-weight: 600;
-    padding: 1rem;
+    margin-left: 1.7rem;
 }
-
-.best-btn {
-    border: none;
-    width: 60px;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0);
-}
-
-.best-slide {
+.best-slide
+{
+    padding: 0 1rem;
     display: flex;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    padding: 0 1rem;
+    align-items: start;
+    margin-top: -2rem;
+    display: flex;
+    margin: 2rem;
+
+}
+.best-card img
+{
+    margin: 1rem;
+    height: 22rem;
+    width: 40rem;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
-.pos {
+.FinanceNextButton,
+.FinancePrevButton {
+    border: none;
+    width: 6rem;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: rgba(0, 0, 0, 0.19) 0 1rem 2rem, rgba(0, 0, 0, 0.23) 0 6px 6px;
+    top: 15rem;
+    border-radius: 1rem;
+    display: flex;
+    z-index: 100;
+}
+.FinanceNextButton{
     right: 0;
 }
-
-.best-btn p {
-    font-size: 50px;
-    background-color: rgba(255, 255, 255, 0.436);
-    box-shadow: 0px 0px 10px 1px black;
-    border-radius: 10px;
-    color: rgb(0, 0, 0);
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
+.FinancePrevButton{
+    left: 0;
 }
-
-.best-card {
-    margin: 1rem;
-    border-radius: 10px;
+.FinanceNextButton:hover,
+.FinancePrevButton:hover {
+    transform: scale(1.04);
 }
-
-.best-card:hover {
-    cursor: pointer;
-}
-
-.best-card img {
-    width: 400px;
-    height: 220px;
+.FinanceNextButton p,
+.FinancePrevButton p {
+    font-size: 5rem;
+    background-color: rgba(255, 255, 255, 0.429);
+    box-shadow: rgba(0, 0, 0, 0.19) rem 1rem 2rem, rgba(0, 0, 0, 0.23) rem 6px 6px;
     border-radius: 1rem;
+    color: #0A1C30;
+    cursor: pointer;
+    width: 5rem;
+    height: 5rem;
+}
+
+@media screen and (max-width: 460px) {
+    .best-card img
+    {
+        width: 32.5rem;
+    }
+    
 }

@@ -60,23 +60,22 @@ const TotalAmount = () => {
 
     return (
         <>
-            <div id='teContainer'>
             
-                <div className='Background'>
+                <div className='Background1'>
 
                     <div id='te1Container'>
 
                         <div id='teLink'>
                             <div className='Earning'>
                                 <p id='tep'>Total Earnings</p>
-                                <p id='teprice'><i class="fa fa-rupee"></i> {data.amount}</p>
+                                <p id='teprice'><i className="fa fa-rupee"></i> {data.amount}</p>
                             </div>
-                            <div id='owall'><i class='fas fa-wallet' id='waIcon'></i></div>
+                            <div id='owall'><i className='fas fa-wallet' id='waIcon'></i></div>
                         </div>
 
                         <p id='temsg'>Earnings will show here within 72 hours of your shopping via FreeKaMaal.</p>
 
-                        <div class='btns-earn'>
+                        <div className='btns-earn'>
 
                             <div className='HomePageLink'>
                                 {<Link to='#' className='btn-with' onClick={withHandler}><span>Withdraw</span></Link>}
@@ -103,8 +102,7 @@ const TotalAmount = () => {
                     </div>
 
                 </div>
-            </div>
-            <ToastContainer position='top-center' />
+            {/* <ToastContainer position='top-center' /> */}
             {show && <MyModel withHandler={withHandler} amount={data.amount} />}
         </>
     )
