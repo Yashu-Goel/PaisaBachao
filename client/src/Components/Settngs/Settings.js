@@ -5,6 +5,7 @@ import axios from "axios";
 import Navbar from "../Navbar/Navbar";
 import { toast } from "@mobiscroll/react";
 import Popup from "./Popup";
+import { ToastContainer } from "react-toastify";
 
 const API_BASE = "https://calm-ruby-hare-cape.cyclic.app";
 
@@ -38,7 +39,7 @@ const Settngs = () => {
   };
 
 
-  
+
   return (
     <>
       <div className="setContainer">
@@ -94,8 +95,8 @@ const Settngs = () => {
         </div>
       </div>
       {editNameModal && <Popup closeEditNameModal={closeEditNameModal} />}
-
+      <ToastContainer position="top-center" />
     </>
   )
-  }
+}
 export default Settngs;

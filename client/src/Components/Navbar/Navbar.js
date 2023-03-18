@@ -27,20 +27,33 @@ const Navbar = () => {
     e.preventDefault();
     setResetModal(false);
   };
-
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
   return (
-    <div className="topnav">
-      <Link to='/'>Home</Link>
-      <Link id="support" onClick={() => setShowModal(true)}>Support</Link>
-      <Link to="/setting/payment-history">Payment History</Link>
-      <Link to="/myearning">My Earnings</Link>
-      <Link onClick={() => setResetModal(true)}>Reset Password</Link>
-      <Link to="/setting" id="setting1" className='active'><AiFillSetting /></Link>
-      <Link to='/' onClick={LogoutHandler} >Logout</Link>
+    <>
+      <div className="topnav" id="myTopnav">
+        <Link to='/' className='Home'>Home</Link>
+        <Link to="/setting/payment-history">Payment History</Link>
+        <Link id="support" onClick={() => setShowModal(true)}>Support</Link>
+        <Link to="/myearning">My Earnings</Link>
+        <Link onClick={() => setResetModal(true)}>Reset Password</Link>
+        <Link to="/setting" id="setting1" className='active'><AiFillSetting /></Link>
+        <Link to='/' onClick={LogoutHandler}>Logout</Link>
+        <Link className="icon" onclick={myFunction}>
+          <i className="fa fa-bars"></i>
+        </Link>
+      </div>
       {showModal && <Support closeModal={closeModal} />}
       {resetModal && <ResetModal closeResetModal={closeResetModal} />}
-    </div>
+    </>
   )
 }
+
 
 export default Navbar

@@ -90,7 +90,7 @@
 
 
 .HomePageLink span:hover,
-.btn-with:hover {
+.btn-with:hover,.btn-home:hover {
     background-color: #d0b3fd;
     color: black;
 }
@@ -163,14 +163,6 @@
     padding: 1.6rem;
     padding-left: 0;
     margin-top: 3rem;
-}
-
-.btn-with {
-    margin-right: 10rem;
-}
-
-.btn-add {
-    margin-right: 16.4rem;
 }
 
 #order-link:hover {

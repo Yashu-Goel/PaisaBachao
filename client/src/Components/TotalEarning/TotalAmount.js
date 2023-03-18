@@ -55,56 +55,55 @@ const TotalAmount = () => {
             .then((res) => {
                 setData(res.data);
             })
-            .catch((error) => console.log("Not loginned"));
+            .catch((error) => toast.error("Not loginned"));
 
     })
 
 
     return (
         <>
-            
-                <div className='Background1'>
+            <div className='Background1'>
 
-                    <div id='te1Container'>
+                <div id='te1Container'>
 
-                        <div id='teLink'>
-                            <div className='Earning'>
-                                <p id='tep'>Total Earnings</p>
-                                <p id='teprice'><i className="fa fa-rupee"></i> {data.amount}</p>
-                            </div>
-                            <div id='owall'><i className='fas fa-wallet' id='waIcon'></i></div>
+                    <div id='teLink'>
+                        <div className='Earning'>
+                            <p id='tep'>Total Earnings</p>
+                            <p id='teprice'><i className="fa fa-rupee"></i> {data.amount}</p>
                         </div>
-
-                        <p id='temsg'>Earnings will show here within 72 hours of your shopping via FreeKaMaal.</p>
-
-                        <div className='btns-earn'>
-
-                            <div className='HomePageLink'>
-                                {<Link to='#' className='btn-with' onClick={withHandler}><span>Withdraw</span></Link>}
-                            </div>
-                            <div className='HomePageLink'>
-                                <Link to='/' className='btn-home'><span>Home</span></Link>
-                            </div>
-                        </div>
-
+                        <div id='owall'><i className='fas fa-wallet' id='waIcon'></i></div>
                     </div>
 
-                    <div id='order-container'>
-                        {(data.array.length !== 0) && <h2 id='order-heading'>CLICK HISTORY</h2>}
-                        {(data.array.length === 0) && <h2 id='order-heading'>No Click History</h2>}
-                        <ul id='order'>
-                            {data.array.map((todo, index) => (
-                                <div key={index} id='order-link'>
-                                    <li id='txt' className='order-links'>Shopped at: {todo.text}</li>
-                                    <p id='day' className='order-links'>Clicked on: {todo.currDay}</p>
-                                    <button id='pending' className='order-links'>{todo.status}</button>
-                                </div>
-                            ))}
-                        </ul>
+                    <p id='temsg'>Earnings will show here within 72 hours of your shopping via FreeKaMaal.</p>
+
+                    <div className='btns-earn'>
+
+                        <div className='HomePageLink'>
+                            <Link to='#' className='btn-with' onClick={withHandler}><span>Withdraw</span></Link>
+                        </div>
+                        <div className='HomePageLink'>
+                            <Link to='/' className='btn-home'><span>Home</span></Link>
+                        </div>
                     </div>
 
                 </div>
-            <ToastContainer position='top-center' toastClassName='my-toast'/>
+
+                <div id='order-container'>
+                    {(data.array.length !== 0) && <h2 id='order-heading'>CLICK HISTORY</h2>}
+                    {(data.array.length === 0) && <h2 id='order-heading'>No Click History</h2>}
+                    <ul id='order'>
+                        {data.array.map((todo, index) => (
+                            <div key={index} id='order-link'>
+                                <li id='txt' className='order-links'>Shopped at: {todo.text}</li>
+                                <p id='day' className='order-links'>Clicked on: {todo.currDay}</p>
+                                <button id='pending' className='order-links'>{todo.status}</button>
+                            </div>
+                        ))}
+                    </ul>
+                </div>
+
+            </div>
+            <ToastContainer position='top-center' toastClassName='my-toast' />
             {show && <MyModel withHandler={withHandler} amount={data.amount} />}
         </>
     )

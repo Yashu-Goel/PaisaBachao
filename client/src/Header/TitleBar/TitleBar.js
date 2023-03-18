@@ -38,7 +38,7 @@ const TitleBar = () => {
         setCredentials(true);
         setAmount(res.data);
       })
-      .catch((error) => console.log("Not loginned"));
+      .catch((error) => toast.error("Authentication failed please login again"));
   })
 
   function Logout() {
@@ -63,7 +63,7 @@ const TitleBar = () => {
           {credentials && <Link to="/setting"> <button className='butt bot' id="setting" ><AiFillSetting /></button></Link>}
         </div>
       </div>
-      <ToastContainer autoClose={2000} />
+      <ToastContainer autoClose={2000} position="top-center" />
     </>)
 };
 
