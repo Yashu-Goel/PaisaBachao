@@ -10,7 +10,7 @@ const TopCashbackStoresCard = (props) => {
 
     const [, setCredentials] = useState(false);
 
-    
+
     const string = localStorage.getItem("profile");
     const onClickHandler = async (e) => {
 
@@ -23,13 +23,12 @@ const TopCashbackStoresCard = (props) => {
         var h = today.getHours();
         var m = today.getMinutes();
         const currDay = today.toLocaleDateString("de-DE") + " at " + h + ":" + m + " hrs.";
-
         await axios.post(API_BASE + "/click", {
 
             headers: {
                 "Content-Type": "application/json"
             },
-            data:({
+            data: ({
                 store: props.BrandName, id: props.id, offerid: props.Cashback, currDay: currDay, token: string
             })
         })
@@ -42,7 +41,7 @@ const TopCashbackStoresCard = (props) => {
 
     return (
         <div className='MainContainer1'>
-            <Link to={string ? props.Link : "#"} className='AnchorContainer' target={string && '_blank'} rel="noreferrer" onClick={onClickHandler}>
+            <Link to={string ? props.Link : ""} className='AnchorContainer' target={(string == null) ? "" : '_blank'} rel="noreferrer" onClick={onClickHandler}>
                 <div className='ImageContainer'>
                     <p>{props.Offer}</p>
                     <img src={props.ImageSrc} alt='offers' />

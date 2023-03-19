@@ -39,7 +39,7 @@ const TitleBar = () => {
         setAmount(res.data);
       })
       .catch((error) => toast.info("Please login"));
-  })
+  },[])
 
   function Logout() {
     localStorage.removeItem("profile");

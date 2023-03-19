@@ -8,8 +8,6 @@ import axios from 'axios';
 import '../Toast.css'
 const API_BASE = "https://fair-bear-gaiters.cyclic.app"
 
-
-
 const TotalAmount = () => {
     const navigate = useNavigate();
 
@@ -95,7 +93,7 @@ const TotalAmount = () => {
                         {data.array.map((todo, index) => (
      
                             <div key={index} id='order-link'>
-                                {console.log(index+": "+todo.text)}
+                            
                                 <li id='txt' className='order-links'>Shopped at: {todo.text}</li>
                                 <p id='day' className='order-links'>Clicked on: {todo.currDay}</p>
                                 <button id='pending' className='order-links'>{todo.status}</button>
