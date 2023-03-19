@@ -4,6 +4,7 @@
     overflow: hidden;
     background-color: #333;
     width: 100%;
+
 }
 
 .topnav a {
@@ -30,11 +31,40 @@
     display: none;
 }
 
+.SettingMenu
+{
+    position: absolute;
+    top: 5rem;
+    right: 0;
+    background-color: #ddd;
+    z-index: 100;
+    padding: 3rem 2rem;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
 
+.SettingMenu span
+{
+    color: #333;
+    font-size: 2rem;
+}
+.SettingBackground
+{
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #3333337f;
+    z-index: 10;
+}
 @media screen and (max-width: 900px) {
 
     .topnav a{
         font-size: 1.5rem;
+    }
+    .Home span{
+        font-size: 2rem;
     }
 }
 
@@ -42,6 +72,7 @@
 
     .topnav {
         display: block;
+        max-height: 5rem;
     }
 
     .topnav a:not(:first-child) {
@@ -51,6 +82,7 @@
     .topnav a.icon {
         float: right;
         display: block;
+        font-size: 2rem;
     }
 }
 

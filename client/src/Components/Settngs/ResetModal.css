@@ -14,10 +14,10 @@
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 35rem;
+    height: auto;
     background-color: #bcbcf4;
     width: 40rem;
-    border-radius: 1rem;
+    border-radius: 1rem;    
 }
 
 .close-button {

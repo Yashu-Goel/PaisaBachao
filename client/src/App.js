@@ -6,7 +6,6 @@ import Homepage from './Components/Homepage';
 import React, { useState } from 'react';
 import TotalAmount from './Components/TotalEarning/TotalAmount';
 import Settngs from './Components/Settngs/Settings';
-import Popup from './Components/Settngs/Popup';
 import PaymentHistory from './Components/PaymentHistory/PaymentHistory';
 import HowDoesItWork from './Components/HowDoesItWork/HowDoesItWork';
 import ResetPass from './Authentication/ResetPass/ResetPass';

@@ -5,7 +5,6 @@ import { alert } from '@mobiscroll/react';
 import {  toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import "@mobiscroll/react/dist/css/mobiscroll.min.css";
-import '../../Components/Toast.css'
 const API_BASE = "https://calm-ruby-hare-cape.cyclic.app";
 
 const ResetPass = ({closeModal}) => {
@@ -38,14 +37,11 @@ const ResetPass = ({closeModal}) => {
                 toast.success("Redirecting to login page...", setTimeout(() => {
                     window.location.reload(true);
                 }, 3000) ,
-                {
-                    toastClassName: "my-toast"
-                })
+       )
             })
             .catch((error) => {
-                toast.error(error.message,{
-                    toastClassName: 'my-toast'
-                });
+                toast.error("Error: " + error.message,
+                );
                 setTimeout(() => {
                     navigate('/signup');
                 }, 5000)
