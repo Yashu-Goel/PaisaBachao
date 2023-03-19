@@ -2,8 +2,6 @@ import "./Footer.css";
 import React from "react";
 import { SiLinkedin } from "react-icons/si";
 import { GoMarkGithub } from "react-icons/go";
-import AllenImg from "../Photos/Allen.png"
-import YashuImg from "../Photos/Yashu.png"
 import { Link } from 'react-router-dom'
 
 const Footer = () => {
@@ -15,9 +13,6 @@ const Footer = () => {
         </div>
         <div className="OuterContainer">
           <div>
-            {/* <div className="FooterImageContainer">
-              <img src={AllenImg} />
-            </div> */}
             <div className="NameContainer">
               <p>Allen Benny</p>
             </div>
@@ -32,9 +27,6 @@ const Footer = () => {
           </div>
 
           <div>
-            {/* <div className="FooterImageContainer">
-              <img src={YashuImg} />
-            </div> */}
             <div className="NameContainer">
               <p>Yashu Goel</p>
             </div>
@@ -47,8 +39,8 @@ const Footer = () => {
               </Link>
             </div>
           </div>
-
         </div>
+        <p className="last-mein">Copyright © 2023 Paisa बचाओ. All Rights Reserved. </p>
       </footer>
     </div>
   );
