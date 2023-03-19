@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import "./Popup.css";
-import { useNavigate } from "react-router-dom";
 
 const API_BASE = "https://fair-bear-gaiters.cyclic.app";
 
 const Popup = ({ closeEditNameModal }) => {
-  const navigate = useNavigate();
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [pass, setPass] = useState("");

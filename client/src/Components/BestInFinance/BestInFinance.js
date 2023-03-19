@@ -33,49 +33,49 @@ const BestInFinance = () => {
         <div className="best-slide">
           <div className="best-card">
             <div className="best-image">
-              <img src={require("./Images/CardEdit.png")} />
+              <img src={require("./Images/CardEdit.png")} alt="CreditCard1"/>
             </div>
           </div>
 
           <div className="best-card">
             <div className="best-image">
-              <img src={require("./Images/CardEdit2.png")} />
+              <img src={require("./Images/CardEdit2.png")} alt="CreditCard2"/>
             </div>
           </div>
 
           <div className="best-card">
             <div className="best-image">
-              <img src={require("./Images/CardEdit3.png")} />
+              <img src={require("./Images/CardEdit3.png")} alt="CreditCard3"/>
             </div>
           </div>
 
           <div className="best-card">
             <div className="best-image">
-              <img src={require("./Images/CardEdit4.png")} />
+              <img src={require("./Images/CardEdit4.png")} alt="CreditCard4"/>
             </div>
           </div>
 
           <div className="best-card">
             <div className="best-image">
-              <img src={require("./Images/CardEdit6.png")} />
+              <img src={require("./Images/CardEdit6.png")} alt="CreditCard5"/>
             </div>
           </div>
 
           <div className="best-card">
             <div className="best-image">
-              <img src={require("./Images/CardEdit7.png")} />
+              <img src={require("./Images/CardEdit7.png")} alt="CreditCard6"/>
             </div>
           </div>
 
           <div className="best-card">
             <div className="best-image">
-              <img src={require("./Images/CardEdit8.png")} />
+              <img src={require("./Images/CardEdit8.png")} alt="CreditCard7"/>
             </div>
           </div>
 
           <div className="best-card">
             <div className="best-image">
-              <img src={require("./Images/CardEdit4.png")} />
+              <img src={require("./Images/CardEdit4.png")} alt="CreditCard8"/>
             </div>
           </div>
         </div>
