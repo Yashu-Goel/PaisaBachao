@@ -61,3 +61,11 @@
 .last-mein{
     text-align: center;
 }
+.CopyRight{
+    background-color: #fff;
+    padding-top: 1rem;
+}
+.CopyRight p{
+    color: #0a1c30;
+    font-size: 2rem;
+}

@@ -40,8 +40,12 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <p className="last-mein">Copyright © 2023 Paisa बचाओ. All Rights Reserved. </p>
       </footer>
+      <div className="CopyRight">
+        <p className="last-mein">Copyright © 2023 Paisa बचाओ. All Rights Reserved. </p>
+
+        </div>
+
     </div>
   );
 };
