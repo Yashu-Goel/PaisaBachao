@@ -35,6 +35,8 @@ const ResetModal = ({ closeResetModal }) => {
                 toast.success("Password Changed successfully");
                 setTimeout(() => {
                     navigate("/");
+                    localStorage.removeItem("profile");
+
                 }, 2500);
             })
             .catch((error) => toast.error(error.response.data));
@@ -68,7 +70,7 @@ const ResetModal = ({ closeResetModal }) => {
                         </form>
                     </div>
                 </div>
-                {/* <ToastContainer position='top-center' autoClose={2500} /> */}
+                
             </div>
         </>
 
