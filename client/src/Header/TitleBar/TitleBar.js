@@ -38,7 +38,7 @@ const TitleBar = () => {
         setCredentials(true);
         setAmount(res.data);
       })
-      .catch((error) => toast.error("You have been logged out. Please login again"));
+      .catch((error) => toast.info("Please login"));
   })
 
   function Logout() {
@@ -51,7 +51,7 @@ const TitleBar = () => {
       <div className="TitleContainer">
         <MenuBar />
         <div className="none">&#x0;</div>
-        <img src={Logo} alt="logo" className="-logo" />
+        <img src={Logo} alt="logo" className="NewLogo" />
         <input className="SearchBar" placeholder="What do you want to buy today...?" />
         <div className="Registration">
           {credentials && <Link to="/myearning" id="earning">Total Earnings: &#8377;{amount}</Link>}
@@ -63,7 +63,7 @@ const TitleBar = () => {
           {credentials && <Link to="/setting"> <button className='butt bot' id="setting" ><AiFillSetting /></button></Link>}
         </div>
       </div>
-      <ToastContainer autoClose={2000} position="top-center" toastClassName="my-toast"/>
+      <ToastContainer autoClose={4000} position="top-center" toastClassName="my-toast"/>
     </>)
 };
 
