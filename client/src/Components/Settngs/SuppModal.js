@@ -6,16 +6,7 @@ const API_BASE = "https://fair-bear-gaiters.cyclic.app";
 
 const Support = ({ closeModal }) => {
 
-    const handleErrors = async (res) => {
-        if (!res.ok) {
-            const { message } = await res.json();
-            throw Error(message);
-        } else if (res.ok) {
-            const { message } = await res.json();
-            throw Error(message);
-        }
-        return res.json();
-    }
+
 
     const [isError, setIsError] = useState("");
     const [name, setName] = useState("");

@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import './ResetModal.css'
 import axios from "axios";
-import { toast, ToastContainer } from 'react-toastify';
+import { toast} from 'react-toastify';
 
 const API_BASE = "https://fair-bear-gaiters.cyclic.app";
 
