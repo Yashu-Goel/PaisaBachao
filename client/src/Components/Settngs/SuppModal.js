@@ -54,12 +54,12 @@ const Support = ({ closeModal }) => {
                     <form id="contact-form" >
                         <div className="form-group">
                             <label htmlFor="name">Name</label><br />
-                            <input type="text" className="form-control" value={name} onChange={(e) => setName(e.target.value)} placeholder='name' required />
+                            <input type="text" className="form-control" value={name} onChange={(e) => setName(e.target.value)} placeholder='name' required autoComplete='on'/>
                         </div>
                         <div className="form-group">
                             <label htmlFor="exampleInputEmail1">Subject</label>
                             <br />
-                            <input type="text" className="form-control" aria-describedby="emailHelp" placeholder='payment issue' value={subject} onChange={(e) => setSubject(e.target.value)} required />
+                            <input autoComplete='on' type="text" className="form-control" aria-describedby="emailHelp" placeholder='payment issue' value={subject} onChange={(e) => setSubject(e.target.value)} required />
                         </div>
                         <div className="form-group">
                             <label htmlFor="message">Message</label>

@@ -9,11 +9,9 @@ const MenuBar = () => {
   const Hide = () => {
     if (!visible) {
       setVisible(true);
-      console.log(visible);
     }
     else if (visible) {
       setVisible(false);
-      console.log(visible);
     }
   }
   return (
