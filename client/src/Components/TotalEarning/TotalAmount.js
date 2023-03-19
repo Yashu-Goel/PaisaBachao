@@ -57,7 +57,7 @@ const TotalAmount = () => {
             })
             .catch((error) => toast.error("Not loginned"));
 
-    })
+    },[])
 
 
     return (
@@ -93,7 +93,9 @@ const TotalAmount = () => {
                     {(data.array.length === 0) && <h2 id='order-heading'>No Click History</h2>}
                     <ul id='order'>
                         {data.array.map((todo, index) => (
+     
                             <div key={index} id='order-link'>
+                                {console.log(index+": "+todo.text)}
                                 <li id='txt' className='order-links'>Shopped at: {todo.text}</li>
                                 <p id='day' className='order-links'>Clicked on: {todo.currDay}</p>
                                 <button id='pending' className='order-links'>{todo.status}</button>
