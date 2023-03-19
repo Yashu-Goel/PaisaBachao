@@ -6,7 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { Link, useNavigate } from 'react-router-dom'
 import axios from 'axios';
 import '../Toast.css'
-const API_BASE = "https://calm-ruby-hare-cape.cyclic.app"
+const API_BASE = "https://fair-bear-gaiters.cyclic.app"
 
 
 

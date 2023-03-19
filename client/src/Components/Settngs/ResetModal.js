@@ -4,8 +4,7 @@ import './ResetModal.css'
 import axios from "axios";
 import { toast, ToastContainer } from 'react-toastify';
 
-// const API_BASE = "https://calm-ruby-hare-cape.cyclic.app";
-const API_BASE = "http://localhost:5000";
+const API_BASE = "https://fair-bear-gaiters.cyclic.app";
 
 const ResetModal = ({ closeResetModal }) => {
 

@@ -2,32 +2,10 @@ import React from "react";
 import "./BestInFinance.css";
 
 const BestInFinance = () => {
-  //   let box = document.querySelector(".best-slide");
+
 
   return (
     <div className="FinanceCarousel">
-      {/* <button
-        className="best-btn pre"
-        onClick={() => {
-          let Box = document.querySelector(".best-container");
-          let Width = Box.clientWidth;
-          Box.scrollLeft = Box.scrollLeft - Width + 5;
-          console.log("okok");
-        }}
-      >
-        <p>&lt;</p>
-      </button>
-      <button
-        className="best-btn pos"
-        onClick={() => {
-          let Box = document.querySelector(".best-container");
-          let Width = Box.clientWidth;
-          Box.scrollLeft = Box.scrollLeft +  Width - 5;
-          console.log("okok");
-        }}
-      >
-        <p>&gt;</p>
-      </button> */}
       <button
         className="FinanceNextButton"
         onClick={() => {

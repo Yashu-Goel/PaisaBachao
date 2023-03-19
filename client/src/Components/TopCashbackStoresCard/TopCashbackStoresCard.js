@@ -3,7 +3,7 @@ import './TopCashbackStoresCard.css'
 import { Link, useNavigate } from 'react-router-dom'
 import axios from "axios"
 import { toast } from 'react-toastify';
-const API_BASE = "https://calm-ruby-hare-cape.cyclic.app";
+const API_BASE = "https://fair-bear-gaiters.cyclic.app";
 
 const TopCashbackStoresCard = (props) => {
     const navigate = useNavigate();

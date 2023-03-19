@@ -8,7 +8,7 @@ import Popup from "./Popup";
 import '../Toast.css'
 import { ToastContainer } from "react-toastify";
 
-const API_BASE = "https://calm-ruby-hare-cape.cyclic.app";
+const API_BASE = "https://fair-bear-gaiters.cyclic.app";
 
 const Settngs = () => {
 

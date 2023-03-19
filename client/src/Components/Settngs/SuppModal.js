@@ -2,7 +2,7 @@ import './SuppModal.css'
 import React, { useState } from 'react'
 import { toast } from 'react-toastify';
 
-const API_BASE = "https://calm-ruby-hare-cape.cyclic.app";
+const API_BASE = "https://fair-bear-gaiters.cyclic.app";
 
 const Support = ({ closeModal }) => {
 

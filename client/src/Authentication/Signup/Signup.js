@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { ToastContainer, toast } from 'react-toastify';
 import { useNavigate,Link } from "react-router-dom";
 import '../../Components/Toast.css'
-const API_BASE = "https://calm-ruby-hare-cape.cyclic.app";
+const API_BASE = "https://fair-bear-gaiters.cyclic.app";
 
 const Signup = () => {
 

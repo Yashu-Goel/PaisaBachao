@@ -5,7 +5,7 @@ import { alert } from '@mobiscroll/react';
 import {  toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import "@mobiscroll/react/dist/css/mobiscroll.min.css";
-const API_BASE = "https://calm-ruby-hare-cape.cyclic.app";
+const API_BASE = "https://fair-bear-gaiters.cyclic.app";
 
 const ResetPass = ({closeModal}) => {
     const navigate = useNavigate();

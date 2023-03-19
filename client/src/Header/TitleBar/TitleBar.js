@@ -6,8 +6,8 @@ import axios from "axios"
 import { Link, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 import MenuBar from "../MenuBar/MenuBar";
-
-const API_BASE = "https://calm-ruby-hare-cape.cyclic.app"
+import '../../Components/Toast.css'
+const API_BASE = "https://fair-bear-gaiters.cyclic.app"
 
 const TitleBar = () => {
 
@@ -38,7 +38,7 @@ const TitleBar = () => {
         setCredentials(true);
         setAmount(res.data);
       })
-      .catch((error) => toast.error("Authentication failed please login again"));
+      .catch((error) => toast.error("You have been logged out. Please login again"));
   })
 
   function Logout() {
@@ -63,7 +63,7 @@ const TitleBar = () => {
           {credentials && <Link to="/setting"> <button className='butt bot' id="setting" ><AiFillSetting /></button></Link>}
         </div>
       </div>
-      <ToastContainer autoClose={2000} position="top-center" />
+      <ToastContainer autoClose={2000} position="top-center" toastClassName="my-toast"/>
     </>)
 };
 

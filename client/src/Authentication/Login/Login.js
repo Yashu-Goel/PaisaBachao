@@ -5,7 +5,7 @@ import { ToastContainer, toast } from "react-toastify";
 import '../../Components/Toast.css'
 import ResetPass from "../ResetPass/ResetPass";
 
-const API_BASE = "https://calm-ruby-hare-cape.cyclic.app";
+const API_BASE = "https://fair-bear-gaiters.cyclic.app";
 
 const Login = () => {
   const navigate = useNavigate();
