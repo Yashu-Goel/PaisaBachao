@@ -64,7 +64,8 @@ const Settngs = () => {
                     readOnly="readonly"
                   ></input>
                   <Link>
-                    <i class="fas fa-edit" onClick={() => setEditNameModal(true)}></i>
+                    <p  onClick={() => setEditNameModal(true)}><span>&#9998;</span></p>
+                    
                   </Link>
                   <br />
                 </div>
@@ -77,9 +78,11 @@ const Settngs = () => {
                     value={data.email.substring(0, 2) + "xxxxxxxxx.com"}
                     readOnly="readonly"
                   />
+                  <div>
                   <Link id="support">
-                    <i class="fas fa-edit"></i>
+                  <span>&#9998;</span>
                   </Link>
+                  </div>
                   <br />
                 </div>
               </div>
