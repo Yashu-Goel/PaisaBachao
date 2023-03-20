@@ -9,11 +9,21 @@ import Settngs from './Components/Settngs/Settings';
 import PaymentHistory from './Components/PaymentHistory/PaymentHistory';
 import HowDoesItWork from './Components/HowDoesItWork/HowDoesItWork';
 import ResetPass from './Authentication/ResetPass/ResetPass';
+import SplashScreen from './SplashScreen';
 export const CredentialContext = React.createContext(null);
 
 function App() {
   const credentialstate = useState(null);
-  return (
+
+  const [isLoading, setIsLoading] = React.useState(true);
+
+  React.useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+  }, []);
+
+  return (isLoading ? <SplashScreen/> :
     <div>
       <CredentialContext.Provider value={credentialstate}>
         <Router>
@@ -32,4 +42,7 @@ function App() {
     </div>
   );
 }
+
 export default App;
+
+

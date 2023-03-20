@@ -1,0 +1,48 @@
+.SplashScreenContainer
+ {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .SplashScreenContainer img
+  {    
+    animation: zoom-in 1s ease-in-out;
+  }
+  
+
+  
+  @keyframes zoom-in {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
+
+  @media screen and (max-width: 900px){
+    
+    .SplashScreenContainer img
+    {    
+      width: 35rem;
+    }
+    @keyframes zoom-in {
+        from {
+          transform: scale(0);
+        }
+        to {
+          transform: scale(1);
+        }
+      }
+  }
+  
+  
+  

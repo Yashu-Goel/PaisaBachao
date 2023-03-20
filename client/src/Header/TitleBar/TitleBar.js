@@ -18,7 +18,6 @@ const TitleBar = () => {
 
   useEffect(() => {
 
-    console.log('okok');
     const string = localStorage.getItem("profile");
 
     if (string === null && credentials === true) {
@@ -40,11 +39,9 @@ const TitleBar = () => {
         setAmount(res.data);
       })
       .catch((error) => toast.info("Please login"));
-<<<<<<< HEAD
-  },)
-=======
+
   },[])
->>>>>>> 0f012d1e994bdcfae6d4bd0e340abc4343b02184
+
 
   function Logout() {
     localStorage.removeItem("profile");
