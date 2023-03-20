@@ -14,10 +14,7 @@ const TopCashbackStores = () => {
           onClick={() => {
             let Box = document.querySelector(".TopCashbackStoresContainer");
             let Width = Box.clientWidth;
-             let a = 0;
-            // if (Width < 400) {
-            //   a = 370 - Width;
-            // }
+            let a = 0;
             Box.scrollLeft = Box.scrollLeft - Width + a;
             console.log(Width);
             Box = document.querySelector(".TopCashbackStoresContainer1");
@@ -32,10 +29,7 @@ const TopCashbackStores = () => {
           onClick={() => {
             let Box = document.querySelector(".TopCashbackStoresContainer ");
             let Width = Box.clientWidth;
-             let a = 0;
-            // if (Width < 400) {
-            //   a = 370 - Width;
-            // }
+            let a = 0;
             Box.scrollLeft = Box.scrollLeft + Width - a;
             Box = document.querySelector(".TopCashbackStoresContainer1");
             Width = Box.clientWidth;

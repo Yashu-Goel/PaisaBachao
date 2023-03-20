@@ -34,7 +34,7 @@ const PaymentHistory = () => {
       .then((res) => res.json())
       .then((data) => setDetails(data))
 
-  })
+  }, [])
 
 
   const closeModal = (e) => {
