@@ -30,7 +30,7 @@ const Login = async (req, res) => {
         return;
     }
 
-    const token = jwt.sign(state, SUPER_KEY, { expiresIn: '2h' });
+    const token = jwt.sign(state, SUPER_KEY);
     res.json({
         token: token,
         message: "Login Success!!",

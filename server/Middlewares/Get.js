@@ -46,7 +46,7 @@ const get = async (req, res) => {
         const { amount } = await Amount.findOne({ userId: users._id });
         res.json(amount);
     } else if (available === null) {
-        const currAmount = new Amount({ userId: users._id, amount: '0' });
+        const currAmount = new Amount({ userId: users._id, amount: 0 });
         await currAmount.save();
     }
 }

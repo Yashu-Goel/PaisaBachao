@@ -38,9 +38,9 @@ const TitleBar = () => {
         setCredentials(true);
         setAmount(res.data);
       })
-      .catch((error) => toast.info("Please login"));
+      .catch((error) => console.log("Please Login"));
 
-  },[])
+  }, [amount])
 
 
   function Logout() {
@@ -65,7 +65,7 @@ const TitleBar = () => {
           {credentials && <Link to="/setting"> <button className='butt bot' id="setting" ><AiFillSetting /></button></Link>}
         </div>
       </div>
-      <ToastContainer autoClose={4000} position="top-center" toastClassName="my-toast"/>
+      <ToastContainer autoClose={4000} position="top-center" toastClassName="my-toast" />
     </>)
 };
 

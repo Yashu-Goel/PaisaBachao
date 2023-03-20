@@ -13,9 +13,6 @@ import SendMail from "./Controller/SendMail.js"
 import ClickStore from "./Controller/ClickStore.js"
 import EditName from "./Controller/EditName.js"
 import Reload from "./Controller/Reload.js"
-import Offer_data from "./Controller/Data_routes/Offer_data.js"
-import TopCashBack from "./Controller/Data_routes/TopCashBack.js"
-import TopCategory from "./Controller/Data_routes/TopCategory.js"
 import EditPass from "./Controller/EditPass.js";
 
 const app = express();
@@ -33,9 +30,6 @@ app.post("/reset", SendMail);
 app.post('/click', ClickStore);
 app.post('/edit-name', EditName);
 app.get("/reload", Reload);
-app.get('/OfferData', Offer_data);
-app.get('/TopCashbackStoresData', TopCashBack);
-app.get('/TopCategoriesData', TopCategory);
 app.post("/edit-pass", EditPass);
 
 app.listen(process.env.PORT, (console.log("Port has started at 5000")));

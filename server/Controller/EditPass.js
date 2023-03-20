@@ -31,9 +31,6 @@ const EditPass = async (req, res) => {
         return;
     }
     else if (cryptr.decrypt(users.password) !== curr) {
-
-        const pass = cryptr.decrypt(users.password);
-        
         res.status(403).json("Incorrect old password");
         return;
     } else {
